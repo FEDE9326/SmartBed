@@ -6,12 +6,16 @@ The systems is divided in four components:
 3) Plotting
 4) Dashboard management
 
+<img align="center" width="80%" height="80%" src="https://github.com/FEDE9326/SmartBed/blob/master/img/Architecture.jpg">
+
 The user's movement during sleeping is collected through an accelerometer placed under the matress.
 Raspberry Pi and Arduino communicates through MQTT protocol and exchange the following messages:
 1) Sensing is turned on/off by user command sent through MQTT message
 2) During the sensing phase, the acceleration on the three axis is collected every second
 Arduino and Raspberry Pi are connected to the same WLAN.
 Raspberry Pi hosts the MQTT broker and runs a Python script that communicates with Freeboard and Thingspeak through REST services.
+
+<img align="center" width="80%" height="80%" src="https://github.com/FEDE9326/SmartBed/blob/master/img/Architecture2.png">
 
 The python script on Raspberry Pi relies on multithreading implementation and allows to manage multiple funcionalities:
 1) MQTT publisher and subscriber
@@ -24,7 +28,8 @@ The Quality of sleep (QoS) function evaluates in an approximative way the qualit
 2) number of samples of the queue
 3) sensor’s MAXVAL possible
 4) total movement and time of sleeping
-IMG
+
+<img align="center" width="80%" height="80%" src="https://github.com/FEDE9326/SmartBed/blob/master/img/formula.gif">
 
 Freeboard is used as user interface:
 1) Available from anywhere at https://freeboard.io/board/ZUART5
