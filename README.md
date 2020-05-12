@@ -15,7 +15,7 @@ Raspberry Pi and Arduino communicates through MQTT protocol and exchange the fol
 Arduino and Raspberry Pi are connected to the same WLAN.
 Raspberry Pi hosts the MQTT broker and runs a Python script that communicates with Freeboard and Thingspeak through REST services.
 
-<img align="center" width="80%" height="80%" src="https://github.com/FEDE9326/SmartBed/blob/master/img/Architecture2.png">
+<img align="center" width="60%" height="60%" src="https://github.com/FEDE9326/SmartBed/blob/master/img/Architecture2.png">
 
 The python script on Raspberry Pi relies on multithreading implementation and allows to manage multiple funcionalities:
 1) MQTT publisher and subscriber
@@ -36,12 +36,14 @@ Freeboard is used as user interface:
 2) Show statistics and real time acceleration values from the sensor
 3) Control panel in which the user can set the alarm time and activate/deactivate the system
 4) Smart alarm function abilitation
-IMG
+
+<img align="center" width="80%" height="80%" src="https://github.com/FEDE9326/SmartBed/blob/master/img/Freeboard.png">
 
 Thingspeak is used to:
 1) Collect data into channels
 2) Generate plots
-IMG
+
+<img align="center" width="80%" height="80%" src="https://github.com/FEDE9326/SmartBed/blob/master/img/Thingspeak.png">
 
 Dweet.io is used as relay between RaspberryPi and Freeboard dashboard:
 1) Very simple and intuitive service that permits to create online object
