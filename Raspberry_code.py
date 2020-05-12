@@ -27,8 +27,8 @@ url_freeboard_sleep_time="https://dweet.io:443/dweet/for/smart_bed_sleep_time"
 #THINGSPEAK
 url_thingspeak="https://api.thingspeak.com/update"
 channel_id="68285"
-api_read="DDYLTBID9D3NZYEF"
-api_write="F0KY7YZQFUDUSD6U"
+api_read="XXXXXXXXXXXXXXX"
+api_write="ZZZZZZZZZZZZZZZ"
 
 #CONSTANT
 soglia=10
